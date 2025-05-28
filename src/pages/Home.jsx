@@ -40,11 +40,10 @@ function Home() {
     })
 
     if (result) {
-      setItem([result]);
+      setItem([result])
     } else {
       Swal.fire({
-        title: "oops!",
-        text: "charachter not found",
+        title: "task not found",
         icon: "error",
         confirmButtonText: "OK",
       })
@@ -83,7 +82,7 @@ function Home() {
             onChange={(e) => setSearchName(e.target.value)}
           />
           <button
-            className="rounded text-white bg-gray-500 hover:bg-gray-900 px-1 text-center"
+            className="rounded text-white bg-blue-500 hover:bg-blue-900 px-1 text-center"
             onClick={Search}
           >
             Search
